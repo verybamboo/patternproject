@@ -100,6 +100,8 @@ function removePrevious() {
   document.querySelector('.charBio2').innerHTML = '';
 }
 
+//the api is missing images for some of the characters so I put a stock picture that indicates that there
+//is no available image
 function fixMissingUrl() {
   if (dataSet[index].pictures.length == 0) {
     charPicSrc.src = 'missing.svg';
