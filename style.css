@@ -13,6 +13,11 @@ p {
   border-radius: 5px;
 }
 
+img {
+  border: 2px solid #E2E5ED;
+  border-radius: 5px;
+}
+
 .leftSide {
   font-size: 20px;
   text-align: center;
@@ -27,11 +32,14 @@ p {
 
 .charDiv {
   text-align: center;
-  width: 35%
+  width: 33%
 }
 
 .slides {
-  width: 30%;
+  width: 34%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .character {

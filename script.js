@@ -27,10 +27,12 @@ fetchData();
 //puts the img into the src of the div, puts the image on the screen and allows for the image to change all
 //each time the index is changed
 function renderDisplay() {
-  charPicSrc.src = dataSet[index].pictures[0].url;
   addCharInfo();
   addCharInfo2();
-  //console.log(dataSet[0])
+  fixMissingUrl();
+  charPicSrc.src = dataSet[index].pictures[0].url;
+  console.log(dataSet[index]);
+  console.log(index);
 }
 
 //this is my function to loop my slide carousel infinitely in a circle, when index is -1, it will just 
@@ -52,7 +54,6 @@ charPic2.addEventListener('click', function () {
   loopAround();
   removePrevious();
   renderDisplay();
-  //console.log(dataSet[0])
 })
 
 //clicking the left arrow will decrease the index by 1 per click and allow for you to go backwards
@@ -63,10 +64,9 @@ charPic.addEventListener('click', function () {
   loopAround();
   removePrevious();
   renderDisplay();
-  //console.log(dataSet[0])
 })
 
-//append relevant information to the first div on the left side
+//add relevant information to the first div on the left side
 function addCharInfo() {
   let bioInfo = `
       <div class="leftSide">
@@ -94,12 +94,17 @@ function addCharInfo2() {
   document.querySelector('.charBio2').insertAdjacentHTML("beforeend", bioInfo2);
 }
 
-//remove the previous appended div before adding the next
+//remove the all html inside the div before adding the new information into the div
 function removePrevious() {
   document.querySelector('.charBio').innerHTML = '';
   document.querySelector('.charBio2').innerHTML = '';
 }
 
+function fixMissingUrl() {
+  if (dataSet[index].pictures.length == 0) {
+    charPicSrc.src = 'missing.svg';
+  }
+}
 
 
 
