@@ -101,14 +101,6 @@ function removePrevious() {
 }
 
 
-// charBio.addEventListener('click', () => {
-//   console.log(characters[i].name);
-//   let bioAdd = document.createElement('p');
-//   let bio = document.createTextNode(characters[i].bio);
-//   bioAdd.appendChild(bio);
-//   //chars[i].appendChild(bio);
-//   roster[i].parentElement.childNodes[2].after(bioAdd)
-// }, { once: true });
 
 
 
