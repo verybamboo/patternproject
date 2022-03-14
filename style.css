@@ -16,6 +16,7 @@ p {
 img {
   border: 2px solid #E2E5ED;
   border-radius: 5px;
+  padding: 10px;
 }
 
 .leftSide {
@@ -30,7 +31,7 @@ img {
   height: 100%;
 }
 
-.charDiv {
+.charDiv, .monsDiv, .gamesDiv {
   text-align: center;
   width: 33%
 }
@@ -42,7 +43,7 @@ img {
   align-items: center;
 }
 
-.character {
+.character, .monsters, .games {
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -72,7 +73,7 @@ img {
   margin: 0 auto;
 }
 
-.buttonLeft, .buttonRight {
+.buttonLeft, .buttonRight, .random {
   background: rgba(255, 255, 255, 0.);
   cursor: pointer;
   border-radius: 50%;
@@ -80,6 +81,10 @@ img {
   top: 50%;
   border: 0;
   background: transparent;
+}
+
+.slides:hover {
+  transform: scale(2);
 }
 
 
