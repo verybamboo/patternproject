@@ -31,7 +31,7 @@ img {
   height: 100%;
 }
 
-.charDiv, .monsDiv, .gamesDiv {
+.charDiv {
   text-align: center;
   width: 33%
 }
@@ -43,7 +43,7 @@ img {
   align-items: center;
 }
 
-.character, .monsters, .games {
+.character {
   height: 100%;
   display: flex;
   justify-content: space-around;
