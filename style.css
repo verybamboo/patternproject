@@ -31,6 +31,11 @@ img {
   height: 100%;
 }
 
+.charDiv, .monsDiv, .gamesDiv {
+  text-align: center;
+  width: 33%
+}
+
 .slides {
   width: 34%;
   display: flex;
