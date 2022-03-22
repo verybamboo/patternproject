@@ -131,9 +131,6 @@ function fixMissingUrl() {
   }
 }
 
-//other apis to try
-//https://www.moogleapi.com/api/v1/games
-//https://www.moogleapi.com/api/v1/monsters
 
 
 
